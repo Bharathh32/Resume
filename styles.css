@@ -1,0 +1,123 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 12px; /* Further reduced font size */
+}
+
+/* Container styles */
+.container {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow: hidden;
+    page-break-after: avoid;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px; /* Further reduced font size */
+}
+
+header p {
+    margin: 4px 0;
+    font-size: 12px; /* Further reduced font size */
+}
+
+/* Content styles */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.left-column, .right-column {
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Section heading styles */
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+    font-size: 16px; /* Further reduced font size */
+    margin-bottom: 5px;
+}
+
+/* Institution styles */
+.institution {
+    font-size: 14px; /* Further reduced font size */
+    font-weight: bold;
+}
+
+/* Other text styles */
+strong {
+    font-size: 14px; /* Further reduced font size */
+}
+
+span {
+    font-size: 12px; /* Further reduced font size */
+}
+
+/* List styles */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+li {
+    margin: 0;
+    font-size: 12px; /* Further reduced font size */
+}
+
+/* Margin and padding styles for sections */
+.education, .experience, .project, .internship {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0 0 5px;
+    font-size: 12px; /* Further reduced font size */
+}
+
+@media print {
+    body {
+        background-color: #fff;
+    }
+    .container {
+        box-shadow: none;
+    }
+}
